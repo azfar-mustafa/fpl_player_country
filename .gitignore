@@ -1,2 +1,4 @@
 .venv
 .vscode
+scraping.log
+*.json

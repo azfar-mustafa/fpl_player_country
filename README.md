@@ -48,7 +48,7 @@ This project is to demonstrate on how to scrape data from a webpage that impleme
 1. **Run the scraping script**:
 
     ```bash
-    python scrape.py
+    python main.py
     ```
 
     This will open a Chrome browser, navigate to the specified URL, accept cookies, and start scrolling down the page to load all content. The data is then scraped and saved to a JSON file.
@@ -67,7 +67,7 @@ The script generates a file named `player_country_data.json` containing a dictio
 
 ## Logging
 
-The script also generates a scraping.log file that logs the scraping process, including heights during scrolling and other debug information.
+The script also generates a `scraping.log` file that logs the scraping process, including heights during scrolling and other debug information.
 
 ## Disclaimer
 

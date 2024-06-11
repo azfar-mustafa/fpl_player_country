@@ -6,14 +6,68 @@ This project is to demonstrate on how to scrape data from a webpage that impleme
 
 ## Prerequisites
 * Installed python version of 3.11 and above.
+* Google Chrome browser (required for ChromeDriver).
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+1. **Clone the repository**:
 
-```bash
-pip install foobar
+   ```bash
+   git clone https://github.com/azfar-mustafa/infinite-scrolling-scraper.git
+   ```
+
+2. **Navigate to the project directory**:
+
+    ```bash
+    cd infinite-scrolling-scraper
+    ```
+
+3. **Set up a virtual environment** (optional but recommended):
+
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+    ```
+
+4. **Install required Python packages**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Ensure your `requirements.txt` includes the necessary packages:
+
+    ```txt
+    selenium
+    beautifulsoup4
+    requests
+    ```
+
+## Usage
+
+1. **Run the scraping script**:
+
+    ```bash
+    python scrape.py
+    ```
+
+    This will open a Chrome browser, navigate to the specified URL, accept cookies, and start scrolling down the page to load all content. The data is then scraped and saved to a JSON file.
+
+## Output
+
+The script generates a file named `player_country_data.json` containing a dictionary where the player names are keys and their respective countries are values. Here’s an example of the structure:
+
+```json
+{
+    "Player Name 1": "Country 1",
+    "Player Name 2": "Country 2",
+    ...
+}
 ```
+
+## Logging
+
+The script also generates a scraping.log file that logs the scraping process, including heights during scrolling and other debug information.
 
 ## Disclaimer
 
